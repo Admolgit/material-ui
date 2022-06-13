@@ -1,0 +1,33 @@
+{
+  "default_branch": "master",
+  "branches": [
+    "l10n_master",
+    "master",
+    "origin",
+    "renovate/lock-file-maintenance",
+    "renovate/major-react",
+    "renovate/mocha-10.x",
+    "renovate/node-17.x",
+    "renovate/react-intersection-observer-9.x"
+  ],
+  "parent": {
+    "l10n_master": "master",
+    "master": null,
+    "origin": "master",
+    "renovate/lock-file-maintenance": "master",
+    "renovate/major-react": "master",
+    "renovate/mocha-10.x": "master",
+    "renovate/node-17.x": "master",
+    "renovate/react-intersection-observer-9.x": "master"
+  },
+  "order": [
+    "master",
+    "l10n_master",
+    "origin",
+    "renovate/lock-file-maintenance",
+    "renovate/major-react",
+    "renovate/mocha-10.x",
+    "renovate/node-17.x",
+    "renovate/react-intersection-observer-9.x"
+  ]
+}
