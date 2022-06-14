@@ -26,13 +26,13 @@
     "url": "https://opencollective.com/mui"
   },
   "scripts": {
-    "build": "yarn build:legacy && yarn build:modern && yarn build:node && yarn build:stable && yarn build:types && yarn build:copy-files",
-    "build:legacy": "node ../../scripts/build legacy",
-    "build:modern": "node ../../scripts/build modern",
-    "build:node": "node ../../scripts/build node",
-    "build:stable": "node ../../scripts/build stable",
-    "build:copy-files": "node ../../scripts/copy-files.js",
-    "build:types": "node ../../scripts/buildTypes",
+    "build": "node init && yarn build:legacy && yarn build:modern && yarn build:node && yarn build:stable && yarn build:types && yarn build:copy-files",
+    "build:legacy": "node init && node ../../scripts/build legacy",
+    "build:modern": "node init && node ../../scripts/build modern",
+    "build:node": "node init && node ../../scripts/build node",
+    "build:stable": "node init && node ../../scripts/build stable",
+    "build:copy-files": "node init && node ../../scripts/copy-files.js",
+    "build:types": "node init && node ../../scripts/buildTypes",
     "prebuild": "rimraf build tsconfig.build.tsbuildinfo",
     "release": "yarn build && npm publish build",
     "test": "cd ../../ && cross-env NODE_ENV=test mocha 'packages/mui-utils/**/*.test.{js,ts,tsx}'",
@@ -46,7 +46,7 @@
     "@types/prop-types": "^15.7.5",
     "@types/react-is": "^16.7.1 || ^17.0.0",
     "prop-types": "^15.8.1",
-    "react-is": "^17.0.2"
+    "react-is": "^18.2.0"
   },
   "devDependencies": {
     "@babel/helper-module-imports": "^7.16.7",
