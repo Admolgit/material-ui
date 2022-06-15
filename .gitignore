@@ -4,7 +4,6 @@
 .idea
 # IntelliJ IDEA module file
 *.iml
-.vscode/*
 !.vscode/launch.json
 *.log
 *.tsbuildinfo
@@ -32,3 +31,7 @@ build
 node_modules
 package-lock.json
 size-snapshot.json
+temp_auto_push.bat
+temp_interactive_push.bat
+branch_structure.json
+config.bat
